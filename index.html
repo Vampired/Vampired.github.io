@@ -1,26 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #666;
-        }    
-        canvas {
-            border: solid gray 3px;
-        }
-    </style>
     <meta charset="UTF-8">
-    <title>Tenis</title>
-</head>
-<body>
-    <canvas></canvas>
+    <title>Vampired - FED</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet">
     
-    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+    <div class="centerDiv">
+    <h2>Need to Code ...?</h2>
+    <h3>CAFFEINE LOADING . . . </h3>
+    <div class="loadingBar"><div class="progres">0%</div></div>
+    <h4>PLEASE WAIT</h4>
+    </div>
+            <div id="arrow"> <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+    </header>
+<div class="lines"><h3 class="headerBar">About me</h3></div>
+<div class="aboutMe"> 
+    <div class="photo">
+        <img src="foto.jpg" alt="Me" class="myPhoto">
+    </div>
+    <div class="main">
+        <div class="info">
+            <div class="tile"><span><i class="fas fa-user"></i></span>
+                <div class="textBlock">
+                    <div class="text">Imię:</div>
+                    <div class="text">Arkadiusz Szoć</div>
+                </div>
+            </div>    
+            <div class="tile"><span><i class="fas fa-at"></i></span>
+                <div class="textBlock">
+                    <div class="text">Email:</div>
+                    <div class="text">ArkadiuszSzoc@gmail.com</div>
+                </div>
+            </div>    
+            <div class="tile"><span><i class="fas fa-phone-square"></i></span>
+                <div class="textBlock">
+                    <div class="text">Telefon:</div>
+                    <div class="text">333 - 333 - 333</div>
+                </div>
+            </div>    
+            <div class="tile"><span><i class="fas fa-calendar-alt"></i></span>
+                <div class="textBlock">
+                    <div class="text">Data urodzenia:</div>
+                    <div class="text">22 sierpnia 1997</div>
+                </div>
+               </div>    
+            <div class="tile"><span><i class="fas fa-home"></i></span>
+                <div class="textBlock">
+                    <div class="text">Adres:</div>
+                    <div class="text">Katowice, Polska</div>
+                </div>
+               </div>    
+            <div class="tile"><span><i class="fas fa-graduation-cap"></i></span>
+                <div class="textBlock">
+                    <div class="text">Wykształcenie:</div>
+                    <div class="text">Średnie</div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+<div class="aboutMe-main">
+       Hej, nazywam się Arek, ukończyłem technikum informatyczne dzięki któremu przekonałem się że programowanie jest tym, co chcę robić w życiu, niestety system nauczania jest jaki jest, przez co wpoiono bardzo dużo złych zasad, którę w programowaniu nigdy nie powinne mieć miejsca. Spędziłem dużo czasu na tym, aby mój kod był jak najbardziej poprawny i wciąż dążę do coraz lepszych rezultatów. Chciałbym się rozwijać i każdego dnia zdobywać nową wiedzę.
+</div>
+<div class="lines"><h3 class="headerBar">Skills</h3></div>
+<div class="skills">
+
+            <h2>Technologie które już poznałem</h2>
+            <div class="wrapSkill">
+            
+                <div class="skill">HTML 5 <img src="img/html5.svg.png"/><p>Tworzenie szkieletu strony przy użyciu znaczników HTML 5</p></div> 
+                <div class="skill">CSS 3<img src="img/css3.svg.png"/><p>Podstawowe umiejętności stylizowania strony w CSS</p></div>
+                <div class="skill">RWD<img src="img/rwd.png"/><p>Staram się, aby moje strony wyglądały dobrze na wszystkich urządzeniach</p></div>
+                <div class="skill">JS/ES6<img src="img/js.png"/><p>Podstawowa wiedza na temat JavaScript i jego działania</p></div>
+                <div class="skill">PHP<img src="img/php.png"/><p>Podstawy programowania back-endowego</p></div>
+                <div class="skill">jQuery<img src="img/jQuery.png"/><p>Szybsze tworzenie kodu JavaScript</p></div>
+                
+            </div>
+                
+                <div class="inProgres">
+                  <h2>Technologie które poznaje</h2>
+                    <div class="skill">React.js<img src="img/react.svg.png"/><p>Biblioteka Js używania do tworzenia interfejsów urzytkownika</p></div>
+                </div>
+                
+  
+   
+</div>
+<div class="lines"><h3 class="headerBar">Projects</h3></div>
+<div class="projects">
+
+<div class="tile-project">
+    <img src="img/projekt_1.png" alt="memory-card-game-screen">
+        <h3>Memory card - game</h3>
+        <p>Prosta gra memory z oprawą graficzną z gry Overwatch, stworzona przy użyciu czystego java scriptu</p>
+        <div class="media">
+        <a href=""><i class="fab fa-github"></i>Github</a>   
+        <a href=""><i class="far fa-window-restore"></i>Live </a> 
+        </div>
+</div>
+<div class="tile-project">
+    <img src="img/projekt_5.png" alt="memory-card-game-screen">
+        <h3>Todo list</h3>
+        <p>Prosta aplikacja Todo, stworzona przy użyciu czystego js.</p>
+        <div class="media">
+        <a href=""><i class="fab fa-github"></i>Github</a>   
+        <a href=""><i class="far fa-window-restore"></i>Live </a> 
+        </div>
+</div>
+<div class="tile-project">
+    <img src="img/projekt_3.png" alt="memory-card-game-screen">
+        <h3>Pong - game</h3>
+        <p>retro gra pong którą możemy umilić sobie czas pokonując "szcztuczną inteligencję"!</p>
+        <div class="media">
+        <a href=""><i class="fab fa-github"></i>Github</a>   
+        <a href=""><i class="far fa-window-restore"></i>Live </a> 
+        </div>
+</div>
+<div class="tile-project">
+    <img src="img/projekt_6.png" alt="memory-card-game-screen">
+        <h3>Tic Tac Toe - game</h3>
+        <p>Prosta gra w kółko i krzyżyk ze sztuczną inteligencją, która gra z zawiązanymi oczami!</p>
+        <div class="media">
+        <a href=""><i class="fab fa-github"></i>Github</a>   
+        <a href=""><i class="far fa-window-restore"></i>Live </a> 
+        </div>
+</div>
+    
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -270,7 +270,7 @@ p {
 }
 
 .tile-project h3 {
-	border-bottom: solid green 2px;
+	border-bottom: solid black 2px;
 	padding: 2px;
 	margin: 2px;
 }
@@ -280,7 +280,7 @@ p {
 	font-weight: bold;
 	letter-spacing: 0.4px;
 	margin-bottom: 15px;
-	border-bottom: 2px solid green;
+	border-bottom: 2px solid black;
 
 }
 
@@ -325,7 +325,7 @@ footer {
 
 footer h2::after {
 	content: "";
-	border: solid green 1px;
+	border: solid white 1px;
 	display: block;
 	width: 80px;
 	margin: 10px auto;

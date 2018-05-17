@@ -270,7 +270,7 @@ p {
 }
 
 .tile-project h3 {
-	border-bottom: solid black 2px;
+	border-bottom: solid green 2px;
 	padding: 2px;
 	margin: 2px;
 }
@@ -280,7 +280,7 @@ p {
 	font-weight: bold;
 	letter-spacing: 0.4px;
 	margin-bottom: 15px;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid green;
 
 }
 
@@ -325,7 +325,7 @@ footer {
 
 footer h2::after {
 	content: "";
-	border: solid white 1px;
+	border: solid green 1px;
 	display: block;
 	width: 80px;
 	margin: 10px auto;
@@ -338,18 +338,7 @@ footer i {
 }
 
 
-@keyframes arrow {
-	0% {
-		transform: translateY(-60px)
-	}
-	50% {
-		transform: translateY(0px)
-	}
-	100% {
-		transform: translateY(60px)
-	}
 
-}
 
 footer .copyright {
 	font-size: 14px;
@@ -465,6 +454,18 @@ footer i:hover  {
 
 }
 
+@keyframes arrow {
+	0% {
+		transform: translateY(-60px)
+	}
+	50% {
+		transform: translateY(0px)
+	}
+	100% {
+		transform: translateY(60px)
+	}
+
+}
 @media (min-width: 450px) and (max-width: 800px) {
 	.skills {
 		display: flex;

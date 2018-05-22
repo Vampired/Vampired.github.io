@@ -4,7 +4,7 @@ function load() {
 	let id = setInterval(frame, 20);
 	const arrow = document.getElementById("arrow");
 	const wait = document.querySelector("h4");
-
+	const loading_text = document.querySelector("h3");
 	function frame() {
 		if (width >= 100) {
 			clearInterval(id);
@@ -15,6 +15,8 @@ function load() {
 			if (width == 100) {
 				arrow.style.display = "block";
 				wait.style.display = "none";
+				loading_text.innerHTML = "Gotowe!"
+				
 			}
 		}
 	}

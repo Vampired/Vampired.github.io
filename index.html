@@ -4,171 +4,173 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Arkadiusz Szoć</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand|Freckle+Face|Lora" rel="stylesheet">
 
 </head>
 
 <body>
-	<header>
-		<div class="centerDiv">
-			<h2>Kodzimy ...?</h2>
-			<h3>Wypełniam Cv ... </h3>
-			<div class="loadingBar">
-				<div class="progres">0%</div>
-			</div>
-			<h4>Zaczekaj chwilkę!</h4>
-		</div>
-		<div id="arrow"> <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
-	</header>
 	<div class="lines">
-		<h3 class="headerBar">About me</h3>
+		<h2 class="header-bar">O mnie</h3>
 	</div>
-	<div class="aboutMe">
+
+	<main class="about-me">
 		<div class="photo">
-			<img src="Myphoto.jpg" alt="My photo" class="myPhoto">
+			<img src="Myphoto.jpg" alt="Zdjęcie przedstawiające moją osobę" class="my-photo">
 		</div>
 		<div class="main">
-			<div class="info">
-				<div class="tile"><span><i class="fas fa-user"></i></span>
-					<div class="textBlock">
-						<div class="text">Imię i nazwisko:</div>
+			<ul class="info">
+				<li class="tile"><span class="ico-center"><span class="fas fa-user"></span></span>
+					<div class="text-block">
+						<div class="text">Imię:</div>
 						<div class="text">Arkadiusz Szoć</div>
 					</div>
-				</div>
-				<div class="tile"><span><i class="fas fa-at"></i></span>
-					<div class="textBlock">
+				</li>
+				<li class="tile"><span class="ico-center"><span class="fas fa-at"></span></span>
+					<div class="text-block">
 						<div class="text">Email:</div>
 						<div class="text">ArkadiuszSzoc@gmail.com</div>
 					</div>
-				</div>
-				<div class="tile"><span><i class="fas fa-phone-square"></i></span>
-					<div class="textBlock">
+				</li>				
+				<li class="tile"><span class="ico-center"><span class="fas fa-phone-square"></span></span>
+					<div class="text-block">
 						<div class="text">Telefon:</div>
 						<div class="text">731 - 103 - 445</div>
 					</div>
-				</div>
-				<div class="tile"><span><i class="fas fa-calendar-alt"></i></span>
-					<div class="textBlock">
+				</li>				
+				<li class="tile"><span class="ico-center"><span class="fas fa-calendar-alt"></span></span>
+					<div class="text-block">
 						<div class="text">Data urodzenia:</div>
 						<div class="text">22 sierpnia 1997</div>
 					</div>
-				</div>
-				<div class="tile"><span><i class="fas fa-home"></i></span>
-					<div class="textBlock">
+				</li>				
+				<li class="tile"><span class="ico-center"><span class="fas fa-home"></span></span>
+					<div class="text-block">
 						<div class="text">Adres:</div>
 						<div class="text">Katowice, Polska</div>
 					</div>
-				</div>
-				<div class="tile"><span><i class="fas fa-graduation-cap"></i></span>
-					<div class="textBlock">
+				</li>				
+				<li class="tile"><span class="ico-center"><span class="fas fa-graduation-cap"></span></span>
+					<div class="text-block">
 						<div class="text">Wykształcenie:</div>
 						<div class="text">Średnie</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="aboutMe-main">
-		Hej, mam na imię Arek, ukończyłem technikum informatyczne dzięki któremu przekonałem się, że programowanie jest tym, co chcę robić w życiu, niestety system nauczania jest jaki jest, przez co wpojono mi bardzo dużo złych zasad, które w programowaniu nigdy nie powinne mieć miejsca. Spędziłem dużo czasu na tym, aby mój kod był jak najbardziej poprawny i wciąż dążę do coraz lepszych rezultatów. Chciałbym się rozwijać i każdego dnia zdobywać nową wiedzę.
-	</div>	
+				</li>
+
+			</ul>
+	</main>
+	<p class="about-me-main">
+		Hej, mam na imię Arek. Ukończyłem technikum informatyczne, dzięki któremu
+		przekonałem się, że programowanie jest tym, co chcę robić w życiu. Niestety,
+		system nauczania jest jaki jest, przez co wpojono mi bardzo dużo złych zasad,
+		które w programowaniu nigdy nie powinny mieć miejsca. Spędziłem dużo czasu na tym,
+		aby mój kod był jak najbardziej poprawny i wciąż dążę do coraz lepszych rezultatów.
+		Chciałbym się rozwijać i każdego dnia zdobywać nową wiedzę.
+	</p>	
 
 	<div class="lines">
-		<h3 class="headerBar">Skills</h3>
+		<h2 class="header-bar">Umiejętności</h2>
 	</div>
-	<div class="skills">
-
-		<h2>Technologie które już poznałem</h2>
-		<div class="wrapSkill">
-
-			<div class="skill">HTML 5 <img src="img/html5.svg.png" alt="html5-img" />
+	<section class="skills">
+	
+	<h3 class="skill-header">Technologie które już poznałem</h3>
+		<ul class="wrap-skill">
+			<li class="skill">
+				HTML 5<img src="img/html5.svg.png"/>
 				<p>Tworzenie szkieletu strony przy użyciu znaczników HTML 5</p>
-			</div>
-			<div class="skill">CSS 3<img src="img/css3.svg.png" alt="css3-img"  />
+			</li>
+			<li class="skill">
+				CSS 3<img src="img/css3.svg.png"/>
 				<p>Podstawowe umiejętności stylizowania strony w CSS</p>
-			</div>
-			<div class="skill">RWD<img src="img/rwd.png" alt="rwd-img"  />
+			</li>
+			<li class="skill">
+				RWD<img src="img/rwd.png"/>
 				<p>Staram się, aby moje strony wyglądały dobrze na wszystkich urządzeniach</p>
-			</div>
-			<div class="skill">JS/ES6<img src="img/js.png" alt="js-img"  />
+			</li>
+			<li class="skill">
+				JS/ES6<img src="img/js.png"/>
 				<p>Podstawowa wiedza na temat JavaScript i jego działania</p>
-			</div>
-			<div class="skill">PHP<img src="img/php.png" alt="php-img"  />
+			</li>
+			<li class="skill">
+				PHP<img src="img/php.png"/>
 				<p>Podstawy programowania back-endowego</p>
-			</div>
-			<div class="skill">jQuery<img src="img/jQuery.png" alt="jq-img"  />
+			</li>
+			<li class="skill">
+				jQuery<img src="img/jQuery.png"/>
 				<p>Szybsze tworzenie kodu JavaScript</p>
-			</div>
+			</li>
+		</ul>
 
-		</div>
-
-		<div class="inProgres">
-			<h2>Technologie które poznaje</h2>
-			<div class="skill">React.js<img src="img/react.svg.png" alt="react-img"  />
-				<p>Biblioteka Js używania do tworzenia interfejsów użytkownika</p>
-			</div>
-		</div>
-
-
-
-	</div>
+		
+	<h3 class="skill-header">Technologie które poznaje</h3>
+		<ul class="in-progres">
+			<li class="skill">React.js
+				<img src="img/react.svg.png"/>
+				<p>Framework Js używania do tworzenia interfejsów urzytkownika</p>
+			</li>
+			<li class="skill">Cypress
+				<img src="img/cypress.png"/>
+				<p>Framework Js który umożliwia testowanie aplikacji</p>
+			</li>
+		</ul>
+	</section>
 	<div class="lines">
-		<h3 class="headerBar">Projects</h3>
+		<h2 class="header-bar">Projekty</h2>
 	</div>
 	<div class="projects">
 
 		<div class="tile-project">
-			<img src="img/projekt_1.png" alt="memory-card-game-screen">
+			<img src="img/projekt_1.png" alt="Screen z gry memory" class="game-screen">
 			<h3>Memory card - game</h3>
 			<p>Prosta gra memory z oprawą graficzną z gry Overwatch, stworzona przy użyciu czystego java scriptu</p>
 			<div class="media">
-				<a href="https://github.com/Vampired/memory-card-game"><i class="fab fa-github"></i>Github</a>
-				<a href="https://vampired.github.io/memory-card-game/"><i class="far fa-window-restore"></i>Live </a>
+				<a href="https://github.com/Vampired/memory-card-game"><span class="fab fa-github"></span>Github</a>
+				<a href="https://vampired.github.io/memory-card-game/"><span class="far fa-window-restore"></span>Live </a>
 			</div>
 		</div>
 		<div class="tile-project">
-			<img src="img/projekt_5.png" alt="todo-list-screen">
+			<img src="img/projekt_5.png" alt="Screen z aplikacji ToDo" class="game-screen">
 			<h3>Todo list</h3>
 			<p>Prosta aplikacja Todo, stworzona przy użyciu czystego js.</p>
 			<div class="media">
-				<a href="https://github.com/Vampired/todo-list"><i class="fab fa-github"></i>Github</a>
-				<a href="https://vampired.github.io/todo-list/"><i class="far fa-window-restore"></i>Live </a>
+				<a href="https://github.com/Vampired/todo-list"><span class="fab fa-github"></span>Github</a>
+				<a href="https://vampired.github.io/todo-list/"><span class="far fa-window-restore"></span>Podgląd </a>
 			</div>
 		</div>
 		<div class="tile-project">
-			<img src="img/projekt_3.png" alt="pong-game-screen">
+			<img src="img/projekt_3.png" alt="Screen z gry pong" class="game-screen">
 			<h3>Pong - game</h3>
-			<p>retro gra pong którą możemy umilić sobie czas pokonując "sztuczną inteligencję"!</p>
+			<p>Retro gra pong którą możemy umilić sobie czas pokonując "szcztuczną inteligencję"!</p>
 			<div class="media">
-				<a href="https://github.com/Vampired/pong"><i class="fab fa-github"></i>Github</a>
-				<a href="https://vampired.github.io/pong/"><i class="far fa-window-restore"></i>Live </a>
+				<a href="https://github.com/Vampired/pong"><span class="fab fa-github"></span>Github</a>
+				<a href="https://vampired.github.io/pong/"><span class="far fa-window-restore"></span>Podgląd </a>
 			</div>
 		</div>
 		<div class="tile-project">
-			<img src="img/projekt_6.png" alt="Tic-Tac-Toe-screen">
+			<img src="img/projekt_6.png" alt="Screen z gry kółko i krzyżyk" class="game-screen">
 			<h3>Tic Tac Toe - game</h3>
 			<p>Prosta gra w kółko i krzyżyk ze sztuczną inteligencją, która gra z zawiązanymi oczami!</p>
 			<div class="media">
-				<a href="https://github.com/Vampired/tic-tac-toe"><i class="fab fa-github"></i>Github</a>
-				<a href="https://vampired.github.io/tic-tac-toe/"><i class="far fa-window-restore"></i>Live </a>
+				<a href="https://github.com/Vampired/tic-tac-toe"><span class="fab fa-github"></span>Github</a>
+				<a href="https://vampired.github.io/tic-tac-toe/"><span class="far fa-window-restore"></span>Podgląd </a>
 			</div>
 		</div>
 
 	</div>
 	</div>
 	
-	<footer>
+<footer>
 		<h2>Kontakt</h2>
-		<div class="phone">+48 731 103 445</div>
-		<div class="mail">ArkadiuszSzoc@gmail.com</div>
-		<a href="https://github.com/Vampired"><i class="fab fa-github"></i> GitHub</a>
-		<a href="cv_Arkadiusz_Szoc.pdf" download="CV-Arkadiusz-Szoć"><i class="far fa-file-alt"></i>CV</a>
-		<div class="copyright">© 2018 | Arkadiusz Szoć</div>
-	</footer>
+		<adress>
+			<p class="phone">+48 731 103 445</p>
+			<p class="mail">ArkadiuszSzoc@gmail.com</p>
+		</adress>
+		<a href="https://github.com/Vampired"><span class="fab fa-github"></span> GitHub</a>
+		<a href="cv_Arkadiusz_Szoc.pdf" download="CV-Arkadiusz-Szoć"><span class="far fa-file-alt"></span>CV</a>
+		<p class="copyright">© 2018 | Arkadiusz Szoć</p>
+</footer>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="script.js"></script>

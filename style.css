@@ -11,45 +11,14 @@ body {
 	font-family: 'Quicksand', sans-serif;
 }
 
-header {
-	height: 100vh;
-	width: 100%;
-	background-color: black;
-	color: white;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	align-items: center;
-	font-family: 'Freckle Face', cursive;
-	letter-spacing: 0.6px;
-}
-
-header > h2,
-h3,
-h4,
-.loadingBar {
+h3 {
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
 	text-align: center;
 }
 
-header h2 {
-	font-size: 62px;
-	margin: 10px 0px;
-}
-
-header h3 {
-	font-size: 32px;
-	margin: 10px 0px;
-}
-
-header h4 {
-	font-size: 22px;
-	margin: 10px 0px;
-}
-
-.loadingBar {
+.loading-bar {
 	width: 100%;
 	background-color: #fff;
 }
@@ -83,12 +52,13 @@ header h4 {
 	animation: arrow 1s infinite linear;
 }
 
-.headerBar {
-	border: solid lime 2px;
+.header-bar {
+	border: solid #212121 2px;
 	padding: 4px;
 	font-size: 32px;
 	margin-top: 5px;
 	width: auto;
+	margin: 20px 0px 10px;
 }
 
 .lines {
@@ -106,7 +76,7 @@ header h4 {
 	width: 50px;
 }
 
-.aboutMe {
+.about-me {
 	display: flex;
 	width: 100%;
 	height: 90%;
@@ -124,10 +94,10 @@ header h4 {
 	width: 75%;
 }
 
-span {
+.ico-center {
 	width: 70px;
 	height: 70px;
-	background-color: lime;
+	background-color: #212121;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -135,7 +105,7 @@ span {
 	font-size: 32px;
 }
 
-.textBlock {
+.text-block {
 	display: flex;
 	align-content: space-around;
 	justify-content: center;
@@ -147,9 +117,9 @@ span {
 	width: 100%;
 }
 
-.myPhoto {
+.my-photo {
 	height: 230px;
-	border: solid lime 2px;
+	border: solid #212121 2px;
 }
 
 .info {
@@ -170,16 +140,16 @@ span {
 	flex-wrap: wrap;
 }
 
-.aboutMe-main {
+.about-me-main {
 	width: 100%;
 	margin: 10px 0px 0px 10px;
 	letter-spacing: 0.3px;
 	font-size: 24px;
-	padding: 0 20%;
+	padding: 0 10%;
 	
 
 }
-.aboutMe-main2 {
+.about-me-main2 {
 	width: 100%;
 	margin: 10px 0px 0px 10px;
 	font-weight: bold;
@@ -196,13 +166,13 @@ span {
 	height: 700px;
 }
 
-.wrapSkill {
+.wrap-skill {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	height: 300px;
 	width: 100%;
-
+	list-style: none;
 }
 
 .skill {
@@ -214,25 +184,30 @@ span {
 	font-weight: bold;
 }
 
-.inProgres {
+.skill:last-child {
+	margin-left: 5%;
+}
+
+.in-progres {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 20px 0px;
 	width: 100%;
+	list-style: none;
 }
 
-.wrapSkill > .skill > img,
-.inProgres > .skill > img {
+.wrap-skill > .skill > img,
+.in-progres > .skill > img {
 	width: 80%;
 	height: 80%;
 	object-fit: fill;
 }
-
-h2 {
+.skill-header {
 	text-align: center;
 	margin: 10px 0px;
 	width: 100%;
+	font-size: 28px;
 }
 
 p {
@@ -291,11 +266,11 @@ p {
 	text-align: center;
 }
 
-.media i {
+.media span {
 	margin-right: 3px;
 }
 
-.media a:hover i {
+.media a:hover span {
 	cursor: pointer;
 	transform: scale(1.2);
 	color: green;
@@ -310,7 +285,7 @@ a {
 footer {
 	margin-top: 35px;
 	background-color: #212121;
-	height: 255px;
+	height: 265px;
 	color: white;
 	width: 100%;
 	text-align: center;
@@ -331,49 +306,54 @@ footer h2::after {
 	
 }
 
-footer i {
+footer span {
 	font-size: 42px;
 	width: 100%;
 }
-
-
-
 
 footer .copyright {
 	font-size: 14px;
 	width: 100%;
 }
 
+footer adress {
+	width: 100%;
+}
+
 footer .phone, .mail {
 	display: flex;
-	justify-content: center;;
+	justify-content: center;
 	width: 100%;
 }
 
 footer a {
 	text-decoration: none;
+	margin: 5px;
 	color: white;
 }
-footer i:hover  {
+footer a:hover span  {
 	color: green;
 }
 
 /* RWD */
 
-@media (max-height: 400px ) {
-		header {
-		align-items: flex-start;
+@media (min-width:220px) and (max-width:360px) {
+	.tile-project > img {
+		width: 280px;
+	}
+	.about-me-main {
+		font-size: 18px;
+	}
+}
+
+@media (min-width:360px) and (max-width:450px) {
+	.about-me-main {
+		font-size: 19px;
 	}
 }
 
 @media (max-width: 790px) {
-	header h2,
-	header h3,
-	header h4 {
-		font-size: 36px;
-	}
-
-	.aboutMe {
+	.about-me {
 		flex-direction: column;
 	}
 
@@ -398,7 +378,7 @@ footer i:hover  {
 		width: 100%;
 	}
 
-	.aboutMe-main {
+	.about-me-main {
 		width: 95%;
 		margin: 2px;
 		padding: 5px;
@@ -412,20 +392,20 @@ footer i:hover  {
 		align-items: flex-start;
 		flex-direction: row;
 		align-content: flex-start;
-		height: 1100px;
+		height: 1150px;
 	}
 
-	.wrapSkill {
+	.wrap-skill {
 		justify-content: center;
 		flex-wrap: wrap;
 		height: 700px;
 	}
-	.wrapSkill > .skill {
+	.wrap-skill > .skill {
 		margin-bottom: 100px;
 	}
 
 
-	.inProgres {
+	.in-progres {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
@@ -433,7 +413,7 @@ footer i:hover  {
 		height: 150px;
 	}
 
-	.inProgres h2 {
+	.in-progres h2 {
 		width: 100%;
 		text-align: center;
 	}
@@ -448,6 +428,9 @@ footer i:hover  {
 		width: 100%;
 		margin-bottom: 15px;
 		border-bottom: 2px solid black;
+	}
+	.tile-project h3 {
+		width: 60%;
 	}
 
 
@@ -476,19 +459,25 @@ footer i:hover  {
 		height: 920px;
 	}
 
-	.wrapSkill {
+	.wrap-skill {
 		justify-content: center;
 		flex-wrap: wrap;
 		height: 530px;
 	}
 
 
-	.inProgres {
+	.in-progres {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 		width: 100%;
 		height: 150px;
+	}
+	.tile-project h3 {
+		width: 60%;
+	}
+	.about-me-main {
+		font-size: 20px
 	}
 }
 
@@ -496,7 +485,7 @@ footer i:hover  {
 @media (min-width: 790px) and (max-width: 1004px) {
 
 
-	.aboutMe {
+	.about-me {
 		flex-direction: column;
 		align-items: center;
 	}
